@@ -3,20 +3,9 @@ package org.example.test;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
-
 import java.time.Duration;
-
-import static org.company.constants.Constant.ALERTS_URL;
-import static org.company.constants.Constant.URL;
-import static org.company.constants.FormConstant.FORM_URL;
-import static org.company.constants.ProgressBarConstant.PROGRESS_BAR_URL;
-import static org.company.constants.SelectableConstant.SELECTABLE_URL;
-import static org.company.constants.SliderConstant.SLIDER_URL;
-import static org.company.constants.SortConstant.SORT_URL;
 import static org.example.constants.Constants.URL;
 
 abstract public class BaseTestSetup {
