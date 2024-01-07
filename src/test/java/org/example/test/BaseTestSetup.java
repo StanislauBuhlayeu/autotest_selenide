@@ -11,7 +11,7 @@ import static org.example.constants.Constants.URL;
 abstract public class BaseTestSetup {
     public static void setup() {
         WebDriverManager.chromedriver();
-        Configuration.browser = "chrome";
+        Configuration.browser = "firefox";
         Configuration.browserSize = "2560x1440";
         Configuration.headless = false;
         Selenide.open(URL);
@@ -26,7 +26,7 @@ abstract public class BaseTestSetup {
 
     @AfterAll
     public static void tearDown() throws InterruptedException {
-        Thread.sleep(100);
+        Thread.sleep(Duration.ofSeconds(5));
         Selenide.closeWebDriver();
     }
 
