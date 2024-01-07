@@ -11,7 +11,7 @@ import static org.example.constants.Constants.URL;
 abstract public class BaseTestSetup {
     public static void setup() {
         WebDriverManager.chromedriver();
-        Configuration.browser = "firefox";
+        Configuration.browser = "chrome";
         Configuration.browserSize = "2560x1440";
         Configuration.headless = false;
         Selenide.open(URL);
