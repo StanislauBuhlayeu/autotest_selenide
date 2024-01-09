@@ -12,7 +12,6 @@ abstract public class BaseTestSetup {
     public static void setup() {
         WebDriverManager.chromedriver();
         Configuration.browser = "chrome";
-        Configuration.baseUrl = "http://localhost:8080/flats";
         Configuration.browserSize = "2560x1440";
         Configuration.headless = false;
         Selenide.open(URL);
