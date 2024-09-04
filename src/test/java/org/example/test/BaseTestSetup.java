@@ -26,7 +26,7 @@ abstract public class BaseTestSetup {
 
     @AfterAll
     public static void tearDown() throws InterruptedException {
-        Thread.sleep(101);
+        Thread.sleep(105);
         Selenide.closeWebDriver();
     }
 
